@@ -1,0 +1,687 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.10f1 (ff3792e53c62) revision 16725906'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 6091 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.10f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/X/Lab1
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+51776
+Successfully changed project path to: C:/Users/X/Lab1
+C:/Users/X/Lab1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [6612] Host "[IP] 10.8.0.3 [Port] 0 [Flags] 2 [Guid] 662860274 [EditorId] 662860274 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JG76F9T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [6612] Host "[IP] 10.8.0.3 [Port] 0 [Flags] 2 [Guid] 662860274 [EditorId] 662860274 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-JG76F9T) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
+Refreshing native plugins compatible for Editor in 44.34 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.10f1 (ff3792e53c62)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/X/Lab1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   ATI
+    VRAM:     3045 MB
+    Driver:   30.0.13022.3
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56916
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.017441 seconds.
+- Loaded All Assemblies, in  0.944 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.668 seconds
+Domain Reload Profiling: 1609ms
+	BeginReloadAssembly (311ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (108ms)
+	RebuildNativeTypeToScriptingClass (28ms)
+	initialDomainReloadingComplete (158ms)
+	LoadAllAssembliesAndSetupDomain (335ms)
+		LoadAssemblies (308ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (330ms)
+			TypeCache.Refresh (327ms)
+				TypeCache.ScanAssembly (299ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (669ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (439ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (10ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (5ms)
+			ProcessInitializeOnLoadAttributes (297ms)
+			ProcessInitializeOnLoadMethodAttributes (109ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  1.853 seconds
+Refreshing native plugins compatible for Editor in 12.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.306 seconds
+Domain Reload Profiling: 3173ms
+	BeginReloadAssembly (425ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (11ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (53ms)
+	RebuildCommonClasses (83ms)
+	RebuildNativeTypeToScriptingClass (35ms)
+	initialDomainReloadingComplete (128ms)
+	LoadAllAssembliesAndSetupDomain (1195ms)
+		LoadAssemblies (933ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (510ms)
+			TypeCache.Refresh (421ms)
+				TypeCache.ScanAssembly (365ms)
+			ScanForSourceGeneratedMonoScriptInfo (61ms)
+			ResolveRequiredComponents (25ms)
+	FinalizeReload (1307ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (924ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (15ms)
+			SetLoadedEditorAssemblies (7ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (119ms)
+			ProcessInitializeOnLoadAttributes (725ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (14ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.20 seconds
+Refreshing native plugins compatible for Editor in 7.03 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3069 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.4 KB). Loaded Objects now: 3531.
+Memory consumption went from 114.1 MB to 114.1 MB.
+Total: 8.162000 ms (FindLiveObjects: 0.666900 ms CreateObjectMapping: 0.190700 ms MarkObjects: 6.017600 ms  DeleteObjects: 1.284700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 14129.795022 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/road.prefab
+  artifactKey: Guid(5c967778ea7e9e94d9ba1295f3632188) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/road.prefab using Guid(5c967778ea7e9e94d9ba1295f3632188) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eb08529122a7e2c9b51076761eed3bcc') in 0.222168 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/stop_sign.prefab
+  artifactKey: Guid(9cd6750d9c5a1544db209f973b5a9229) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/stop_sign.prefab using Guid(9cd6750d9c5a1544db209f973b5a9229) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6c967e0b311026e3632435f6d3ff72da') in 0.040961 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/car_light_green.fbx
+  artifactKey: Guid(d6fbc3bb1f742b240a2f5d916196a9e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/car_light_green.fbx using Guid(d6fbc3bb1f742b240a2f5d916196a9e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '63efcae3699fee2772e49779045053df') in 0.395233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/gas_sign.fbx
+  artifactKey: Guid(c791b879793981440890a3ba80114869) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/gas_sign.fbx using Guid(c791b879793981440890a3ba80114869) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c87189fbe71f74c1285f2a23537b4870') in 0.137324 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/bin.fbx
+  artifactKey: Guid(7d61cc09c45feb64684b04fdea74407e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/bin.fbx using Guid(7d61cc09c45feb64684b04fdea74407e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f4755e91b68dd759824528d32d1af969') in 0.083589 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/bin.prefab
+  artifactKey: Guid(f2bda55154a958745875b5f53c67e688) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/bin.prefab using Guid(f2bda55154a958745875b5f53c67e688) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '629c383d800b44076b42751649269b4c') in 0.049593 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/soda.prefab
+  artifactKey: Guid(7fcac619570880e4eba240de4b43c8ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/soda.prefab using Guid(7fcac619570880e4eba240de4b43c8ec) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c066e646c39e4f6952cb450d8ee65235') in 0.032940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/cone.prefab
+  artifactKey: Guid(34788b30add9e72439c38d7308e9c012) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/cone.prefab using Guid(34788b30add9e72439c38d7308e9c012) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '99f39c9436adc0180863ae253ceb1d9a') in 0.032479 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/blue_car.prefab
+  artifactKey: Guid(a1c4b318a8a9374469461ca62662f396) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/blue_car.prefab using Guid(a1c4b318a8a9374469461ca62662f396) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '9ff2e65235df2b23b288d089854eb94e') in 0.037818 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/blue_house.prefab
+  artifactKey: Guid(eaa7c692fb9d5474b8e9c421d398a498) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/blue_house.prefab using Guid(eaa7c692fb9d5474b8e9c421d398a498) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '41d209fd6189869a7f12b44e2b925066') in 0.113159 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000106 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab
+  artifactKey: Guid(f05030334485c4240a1383d7bf388fb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/bakery.prefab using Guid(f05030334485c4240a1383d7bf388fb8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0ac137c7718f58284842a314cafbcf67') in 0.096014 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/post.prefab
+  artifactKey: Guid(33994efc560df1d49867ad7306de895e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/post.prefab using Guid(33994efc560df1d49867ad7306de895e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b7130471081a24a5684f7c58aad0e963') in 0.053576 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/small_car.prefab
+  artifactKey: Guid(3b9901dcb2f831447bfd8e1a3a3eb8c6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/small_car.prefab using Guid(3b9901dcb2f831447bfd8e1a3a3eb8c6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a94e8bac3686b5d5068957941d61ec7d') in 0.045467 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/tree_3.prefab
+  artifactKey: Guid(d9e032423f8d58b48b36a25f7f980940) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/tree_3.prefab using Guid(d9e032423f8d58b48b36a25f7f980940) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '385e91d528efcd90d0bfbe8625b01e82') in 0.032227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/road_black_zebra_crossing.prefab
+  artifactKey: Guid(04c5ea40b8ce00043b09f49a005c5200) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/road_black_zebra_crossing.prefab using Guid(04c5ea40b8ce00043b09f49a005c5200) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b793044ab96fd9ce0d7b8c5c76e6fe58') in 0.036893 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab
+  artifactKey: Guid(53f03ca5793d34b45989557015343644) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/coffe_shop.prefab using Guid(53f03ca5793d34b45989557015343644) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '18c63fb6806dbeac522f69d87baec814') in 0.037422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/light_red.fbx
+  artifactKey: Guid(c1690fea4e8666048a0886e693f92969) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/light_red.fbx using Guid(c1690fea4e8666048a0886e693f92969) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f2d44a18fc228cc9328792333cf6158c') in 0.065766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/bus_stop_sign.prefab
+  artifactKey: Guid(14ea8cc5a510c8e4bbbcd9970a6bc163) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/bus_stop_sign.prefab using Guid(14ea8cc5a510c8e4bbbcd9970a6bc163) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e6d2d49e63333c8dc6d757711142e1e5') in 0.037492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/gas_station.fbx
+  artifactKey: Guid(1c992eabce9357b40b59009c36972383) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/gas_station.fbx using Guid(1c992eabce9357b40b59009c36972383) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8acb22329ff93358d6c60acda37df5ae') in 0.087789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 13
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b2e745f7883416478aa7bea9ed9a800') in 0.021853 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/hospital.fbx
+  artifactKey: Guid(ad62ec56a4e2ce141822d985a947af93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/hospital.fbx using Guid(ad62ec56a4e2ce141822d985a947af93) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0083725ed5eb9f7520415066067d273d') in 0.078850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/hotel.fbx
+  artifactKey: Guid(8e636f3005c3ff7448d552f67acd3150) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/hotel.fbx using Guid(8e636f3005c3ff7448d552f67acd3150) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2cca2be344c1f91c656e92ebe1a422cd') in 0.190396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 12
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/vehicles/sport_car.fbx
+  artifactKey: Guid(975fc14820d2c72409adbdad3e6c2edc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/vehicles/sport_car.fbx using Guid(975fc14820d2c72409adbdad3e6c2edc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '7acf6a6866f51bb10e1511d7b34e725e') in 0.096528 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/tree_3.fbx
+  artifactKey: Guid(3ca9d32739fe9a445887120c3b52b579) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/tree_3.fbx using Guid(3ca9d32739fe9a445887120c3b52b579) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6484cc7f71572ddf0c3dbcd0fe9e4fc3') in 0.080491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/bush.fbx
+  artifactKey: Guid(53cb4950c8f6d5f4f94f448c21d2d865) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/bush.fbx using Guid(53cb4950c8f6d5f4f94f448c21d2d865) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '644dc704a6eb5996b67469c9afbe7f48') in 0.065670 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/road_black.fbx
+  artifactKey: Guid(99eb40ff528efa0468c7b6170e9bc459) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/road_black.fbx using Guid(99eb40ff528efa0468c7b6170e9bc459) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '34575389bcfc538f264e6621f51b2d40') in 0.056199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/grass.fbx
+  artifactKey: Guid(23f0b891712426743bd60852274556e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/grass.fbx using Guid(23f0b891712426743bd60852274556e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '16fa81c9ae63df3e5c1d4690297b70f2') in 0.064151 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/truck.prefab
+  artifactKey: Guid(9a227b66b71d8924fab6a617a76252b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/truck.prefab using Guid(9a227b66b71d8924fab6a617a76252b3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b208104ec1cdd95da093e10a3224a7a') in 0.040559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000663 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/green_house.fbx
+  artifactKey: Guid(09f1c6a02f99ab74c876d175ac77b8d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/green_house.fbx using Guid(09f1c6a02f99ab74c876d175ac77b8d3) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'cdfa853093ef8ad397d4ce32f96a7767') in 0.079512 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/vehicles/blue_car.fbx
+  artifactKey: Guid(eab79a0ced611f74fbd69ab6fbc86be0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/vehicles/blue_car.fbx using Guid(eab79a0ced611f74fbd69ab6fbc86be0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '290efd921872fbc91a2e5c87b893a245') in 0.087736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/light_red.prefab
+  artifactKey: Guid(7e62fb8797c595141a56770b7d8598eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/light_red.prefab using Guid(7e62fb8797c595141a56770b7d8598eb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '44f197831cafe8c7bc5fe111f4278aaf') in 0.038212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/tree_2.prefab
+  artifactKey: Guid(d1834fb4cb815b4428925b5d639590ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/tree_2.prefab using Guid(d1834fb4cb815b4428925b5d639590ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '75f97f1860739db97ffbf18ee00df0e4') in 0.036185 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_sign.prefab
+  artifactKey: Guid(719242d1ee4302442a846f9becffce96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_sign.prefab using Guid(719242d1ee4302442a846f9becffce96) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '04a70f8015a203c53fd06deffbe17792') in 0.033685 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station.prefab
+  artifactKey: Guid(488152badeea9a0418acf602474df095) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station.prefab using Guid(488152badeea9a0418acf602474df095) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '44566efd2285d243742d8e4892bcdf2f') in 0.036135 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000054 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/cinema.fbx
+  artifactKey: Guid(1b74af686560d35408dab5752952d4d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/cinema.fbx using Guid(1b74af686560d35408dab5752952d4d2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a061feb395784472f920aaffd859352f') in 0.104867 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000068 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Day.mat
+  artifactKey: Guid(204f80089c3c09141a9b32b2bf317160) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Day.mat using Guid(204f80089c3c09141a9b32b2bf317160) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c998440206c7b7c86d2685d3fdcd675c') in 0.035568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/blue_house.fbx
+  artifactKey: Guid(0fda25875f6df574f9a45f59d852966c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/blue_house.fbx using Guid(0fda25875f6df574f9a45f59d852966c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '506511eb786bd19128664bcbe27eaafd') in 0.084614 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/fire_station.fbx
+  artifactKey: Guid(9b4f0aa396369e14294f9e6b4d8bf86d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/buildings/fire_station.fbx using Guid(9b4f0aa396369e14294f9e6b4d8bf86d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '28d2216ef37b5c274ecd8eb374cdab69') in 0.087167 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/post.fbx
+  artifactKey: Guid(14af0bb9749c31048ba40cc960b59d51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/post.fbx using Guid(14af0bb9749c31048ba40cc960b59d51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ccd7cf392d33d4cca2ba7e4e6eceec24') in 0.063568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000141 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/barrier.fbx
+  artifactKey: Guid(4f20aa054a8f9d74f9b0dc26f6568cc5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/barrier.fbx using Guid(4f20aa054a8f9d74f9b0dc26f6568cc5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '90522616257bf7f7aae1511c9cb42ef9') in 0.065468 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/light_green.fbx
+  artifactKey: Guid(5a42b2ea63e8faf4fbfef540ddbe827d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/light_green.fbx using Guid(5a42b2ea63e8faf4fbfef540ddbe827d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b4c00eb9e5ca9331825da49359e20028') in 0.073233 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000090 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Materials/Posters.png
+  artifactKey: Guid(8a5767c4dfef5484f83f8f7edba4ebda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Materials/Materials/Posters.png using Guid(8a5767c4dfef5484f83f8f7edba4ebda) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '83e10983baf61b466a62c4de389c2d9b') in 0.233944 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/tree_2.fbx
+  artifactKey: Guid(5b3f5447e836ccf45b4f17e45301ea52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/tree_2.fbx using Guid(5b3f5447e836ccf45b4f17e45301ea52) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0068c3d934ec35fce0711b79385364b3') in 0.071561 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/hydrant.prefab
+  artifactKey: Guid(558729700eb326e40bc174907cb01040) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/hydrant.prefab using Guid(558729700eb326e40bc174907cb01040) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6772358329fe1e439598936ba65f9ba0') in 0.036109 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/vehicles/small_bus.fbx
+  artifactKey: Guid(c83553f81d630be449ba4b4610b06c58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/vehicles/small_bus.fbx using Guid(c83553f81d630be449ba4b4610b06c58) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e21f426ed6e2f833b63b23db6a6a36a4') in 0.084562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/bench.prefab
+  artifactKey: Guid(85a97115d9e2c01489ae2c70d55813aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/bench.prefab using Guid(85a97115d9e2c01489ae2c70d55813aa) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '47cdba6dfd076cb10450984c8d1ba512') in 0.033444 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab
+  artifactKey: Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/yellow_house.prefab using Guid(1bd929fb09b1fbe4bb7020913cbc6b51) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6979899000b80cdb710342ae5d8dc7c2') in 0.034226 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hospital.prefab
+  artifactKey: Guid(1f79ed5ca6074be449bf893105b2b00c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/hospital.prefab using Guid(1f79ed5ca6074be449bf893105b2b00c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '295bef49f17a9e7f89f78ed33d659622') in 0.039683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Scenes/SampleScene_Profiles/GameObject Profile 2.asset
+  artifactKey: Guid(4e108b864804c1442996f0639932e600) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Scenes/SampleScene_Profiles/GameObject Profile 2.asset using Guid(4e108b864804c1442996f0639932e600) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3404a3ea5f784430be4125acf6c67441') in 0.038400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/small_bus.prefab
+  artifactKey: Guid(cab717eef15fe5540b1bd2685998c6cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/small_bus.prefab using Guid(cab717eef15fe5540b1bd2685998c6cb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '46a5fa385d5527a397627a0083be0b48') in 0.033810 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000114 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/chair.prefab
+  artifactKey: Guid(d65998ad76b1b6e4382acd0ae8d627ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/decorations/chair.prefab using Guid(d65998ad76b1b6e4382acd0ae8d627ba) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f39aee3a7544ccc2bef0456c42b27717') in 0.033580 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/umbrella.fbx
+  artifactKey: Guid(d104e4e7519fa424fa08db8fbd69cd64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/umbrella.fbx using Guid(d104e4e7519fa424fa08db8fbd69cd64) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2a3819fb7e07e33668f71608e596fc5b') in 0.063502 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/hydrant.fbx
+  artifactKey: Guid(e8f9cc066944edf4a8cfcc7ea94eadb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Models/decorations/hydrant.fbx using Guid(e8f9cc066944edf4a8cfcc7ea94eadb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1b7fc4a326a3bc5a754bccb3b5084371') in 0.065292 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/sport_car.prefab
+  artifactKey: Guid(63ec5a47ee81cfb45a962439d42d8f7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/sport_car.prefab using Guid(63ec5a47ee81cfb45a962439d42d8f7a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2f1c3dddbad87095f08d041f3bef2e4e') in 0.051897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab
+  artifactKey: Guid(379d23429c4da5844bea98027a9b338d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/buildings/gas_station_shop.prefab using Guid(379d23429c4da5844bea98027a9b338d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e573cd2de94aff78d3cf44ce384b2938') in 0.048532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000077 seconds.
+  path: Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/bus.prefab
+  artifactKey: Guid(daec182d3f76ce74f82bfd198f01609a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Paulisia_S/3D Game Kit - Lowpoly city assets/Prefabs/vehicles/bus.prefab using Guid(daec182d3f76ce74f82bfd198f01609a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'd8f65fa304abd2db8e13bc4697adf496') in 0.043861 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
