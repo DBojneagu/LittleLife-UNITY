@@ -4,7 +4,7 @@ Our plan is to work on a world simulation game that is point&click based, with v
 During the second sprint we added a character that can move around our map using the WASD keys. You can now accumulate diamonds that will help you later in the game by passing past by them.
 <div align="center">
     <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/cc44da62-bfdb-4ad9-bf4f-9880bdff399f" alt="image" width="600px">
-</div>![Screenshot 2023-11-12 171739](https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/cc44da62-bfdb-4ad9-bf4f-9880bdff399f)
+
 
 
 ## Review
