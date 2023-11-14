@@ -5,7 +5,9 @@ During the second sprint we added a character that can move around our map using
 <div align="center">
     <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/cc44da62-bfdb-4ad9-bf4f-9880bdff399f" alt="image" width="600px">
 </div>
-
+<div align="center">
+    <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101599986/a215460e-bd45-4845-bed3-d3ca644fa0fe" alt="image" width="600px">
+</div>
 
 ## Review
 [Here](https://github.com/DBojneagu/TitleTODO-UNITY/issues) you can write your review for the current sprint.
