@@ -7,7 +7,7 @@ public class CoinCollision : MonoBehaviour
 {
 
     private Rigidbody _rigidbody;
-    private float _respawnTime = 3.0f;
+    public float _respawnTime = 5.0f;
     private int _countCoins = 0;
     //public Text coinText;
 
