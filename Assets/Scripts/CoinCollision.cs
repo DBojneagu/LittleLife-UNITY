@@ -1,4 +1,5 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,7 +10,7 @@ public class CoinCollision : MonoBehaviour
     private Rigidbody _rigidbody;
     public float _respawnTime = 5.0f;
     private int _countCoins = 0;
-    //public Text coinText;
+    public TextMeshProUGUI score;
 
     private void Awake() =>
         _rigidbody = GetComponent<Rigidbody>();
@@ -20,8 +21,7 @@ public class CoinCollision : MonoBehaviour
         {
             // Increment coin count
             _countCoins++;
-            Debug.Log(_countCoins);
-            //coinText.text = "Coins: " + _countCoins.ToString(); 
+            //Debug.Log(_countCoins);
 
             // Disable the coin
             other.gameObject.SetActive(false);
@@ -38,6 +38,11 @@ public class CoinCollision : MonoBehaviour
 
         // Enable the coin and make it visible
         other.gameObject.SetActive(true);
+    }
+
+    private void Update()
+    {
+        score.text = "Balance: " + _countCoins.ToString();
     }
 
 }
