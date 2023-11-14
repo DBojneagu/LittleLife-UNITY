@@ -1,13 +1,15 @@
 using UnityEngine;
 
-/*[RequireComponent(typeof(Rigidbody))]
-*/public class CoinCollision : MonoBehaviour
-{/*
+[RequireComponent(typeof(Rigidbody))]
+public class CoinCollision : MonoBehaviour
+{
 
     private Rigidbody _rigidbody;
+    private float i = 0.0f;
+    public GameObject coin;
 
     private void Awake() =>
-        _rigidbody = GetComponent<Rigidbody>();*/
+        _rigidbody = GetComponent<Rigidbody>();
 
     private void OnCollisionEnter(Collision collision)
     {
@@ -20,11 +22,14 @@ using UnityEngine;
     {
         if (other.CompareTag("Coin"))
         {
-            Debug.Log("Fake Coin!");
+            Debug.Log("Reappearing Coin!");
             Destroy(other.gameObject);
-            return;
+            if (Time.time > i)
+            {
+                i += 2;
+                Instantiate(other.gameObject);
+            }
         }//instantiate, destroy= enable, disable
-        if (other.CompareTag("Coin"))
-            Debug.Log("Fake Coin!");
     }
+
 }
