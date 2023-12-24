@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class HomeScene : MonoBehaviour
 {
     public Button sceneChangeButton;
-
+    public int coinsPerStar = 100;
     // The name of the scene you want to load
     public string sceneToLoad;
 
@@ -20,6 +20,7 @@ public class HomeScene : MonoBehaviour
     // Method to be called when the button is clicked
     void ChangeScene()
     {
+
         // Load the specified scene
         SceneManager.LoadScene(sceneToLoad);
     }
