@@ -13,7 +13,8 @@ public class ChangeScene : MonoBehaviour
         if (other.CompareTag("Cafea"))
         {
             Debug.Log("Collision with Cafea detected!");
-
+            PlayerPrefs.SetInt("CompletedCafe", 1);
+            PlayerPrefs.Save();
             // Save the player's position before transitioning to another scene
             playerPositionHandler.SavePlayerPosition();
 
