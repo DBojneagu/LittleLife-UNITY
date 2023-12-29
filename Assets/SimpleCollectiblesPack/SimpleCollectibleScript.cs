@@ -4,8 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
 public class SimpleCollectibleScript : MonoBehaviour {
-
-	public enum CollectibleTypes {NoType, Type1, Type2, Type3, Type4, Type5}; // you can replace this with your own labels for the types of collectibles in your game!
+    public enum CollectibleTypes {NoType, Type1, Type2, Type3, Type4, Type5}; // you can replace this with your own labels for the types of collectibles in your game!
 
 	public CollectibleTypes CollectibleType; // this gameObject's type
 
@@ -32,12 +31,14 @@ public class SimpleCollectibleScript : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.tag == "Player") {
+		//PlayerCompletedTask();
+
+        if (other.tag == "Player") {
 			Collect ();
 		}
 	}
 
-	public void Collect()
+    public void Collect()
 	{
 		if(collectSound)
 			AudioSource.PlayClipAtPoint(collectSound, transform.position);

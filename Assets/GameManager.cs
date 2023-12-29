@@ -57,6 +57,8 @@ namespace PW
         {
             int stars = CalculateStars();
             int coinsToAdd = stars * 100;
+            PlayerPrefs.SetInt("Stars", stars);
+            PlayerPrefs.Save();
             int nrcoins = PlayerPrefs.GetInt("EarnedCoins");
             //nrcoins++;
             nrcoins+= coinsToAdd;
