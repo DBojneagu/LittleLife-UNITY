@@ -129,24 +129,11 @@ public class Q1 : MonoBehaviour
             textColor.a = 0.2f;
             taskText.color = textColor;
             int stars = PlayerPrefs.GetInt("Stars");
-            
+
             if (taskText.text.StartsWith("C"))
             {
-                if (stars >= 2)
-                {
-                    Debug.LogError("second");
-                    myButton.GetComponent<ButtonActivation>().ActivateButton();
-                }
-                else
-                {
-                    textColor = taskText.color;
-                    textColor.a = 1f;
-                    taskText.color = textColor;
-                    myButton.GetComponent<ButtonActivation>().DezActivateButton();
-                    Debug.LogError("second");
-                    PlayerPrefs.SetInt("CompletedCafe", 0);
-                    PlayerPrefs.Save();
-                }
+                Debug.LogError("first");
+                myButton.GetComponent<ButtonActivation>().ActivateButton();
             }
             if (taskText.text.StartsWith("T"))
             {
