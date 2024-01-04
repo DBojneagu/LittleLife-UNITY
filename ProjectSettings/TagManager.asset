@@ -8,6 +8,8 @@ TagManager:
   - Cafea
   - Fluid
   - Snake
+  - Obstacle
+  - Camera
   layers:
   - Default
   - TransparentFX
