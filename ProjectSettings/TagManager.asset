@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coin
   - Cafea
+  - Fluid
+  - Snake
   layers:
   - Default
   - TransparentFX
