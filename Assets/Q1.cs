@@ -14,11 +14,12 @@ public class Q1 : MonoBehaviour
     public bool isCompleted;
     //public bool isCompletedClaim=0;
     public Button myButton;
+    public Q2 quest2;
 
     private const string LastTaskChangeKey = "LastTaskChangeTime";
-    private const float MinutesToWait = 3f; // 24 hours // Change this to 1 for one minute
+    private const float MinutesToWait = 5f; // 24 hours // Change this to 1 for one minute
 
-    private void Start()
+    private void Awake()
     {
         if (taskText == null)
         {
@@ -34,23 +35,24 @@ public class Q1 : MonoBehaviour
             "Thirsty?\r\nGo to the cafe and get at least 2 stars!",
             "Good Morning!\r\nGo to the cafe and get at least 1 star!",
         };
+        Debug.Log("awake");
 
-        
         int isCompletedCafe = PlayerPrefs.GetInt("CompletedCafe");
-        if (isCompletedCafe==1)
+        if (isCompletedCafe == 1)
         {
             Color textColor = taskText.color;
             textColor.a = 0.2f;
             taskText.color = textColor;
             int isCompletedClaim = PlayerPrefs.GetInt("CompletedClaim");
-            if (isCompletedClaim==0) {
+            if (isCompletedClaim == 0)
+            {
                 BlurTask();
             }
             else
             {
-                
-                textColor.a = 1f;
-                taskText.color = textColor;
+
+                //textColor.a = 1f;
+                //taskText.color = textColor;
                 myButton.GetComponent<ButtonActivation>().DezActivateButton();
             }
             //PlayerPrefs.SetInt("CompletedClaim", 0);
@@ -58,10 +60,41 @@ public class Q1 : MonoBehaviour
         }
         SelectTask();
     }
+    private void Start()
+    {
+        if (taskText == null)
+        {
+            Debug.Log("TextMeshProUGUI component not assigned to TaskCompletion script.");
+        }
 
+        Debug.Log("start");
+
+        int isCompletedCafe = PlayerPrefs.GetInt("CompletedCafe");
+        if (isCompletedCafe == 1)
+        {
+            Color textColor = taskText.color;
+            textColor.a = 0.2f;
+            taskText.color = textColor;
+            int isCompletedClaim = PlayerPrefs.GetInt("CompletedClaim");
+            if (isCompletedClaim == 0)
+            {
+                
+                BlurTask();
+            }
+            else
+            {
+
+                //textColor.a = 1f;
+                //taskText.color = textColor;
+                myButton.GetComponent<ButtonActivation>().DezActivateButton();
+            }
+            //PlayerPrefs.SetInt("CompletedClaim", 0);
+            //PlayerPrefs.Save();
+        }
+    }
     public void SelectTask()
     {
-        
+
         //myButton.GetComponent<ButtonActivation>().DezActivateButton();
         if (taskTexts != null && taskTexts.Count > 0)
         {
@@ -71,6 +104,7 @@ public class Q1 : MonoBehaviour
             // Check if enough time has passed since the last task change
             if ((currentTime - lastTaskChangeTime).TotalMinutes >= MinutesToWait)
             {
+                Debug.Log("Task Changed");
                 isCompleted = false;
                 PlayerPrefs.SetInt("CompletedCafe", 0);
                 PlayerPrefs.Save();
@@ -84,7 +118,7 @@ public class Q1 : MonoBehaviour
 
                 // Set the task text based on the random index
                 taskText.text = taskTexts[randomIndex];
-
+                quest2.SelectTask();
                 // Update the last task change time
                 SaveLastTaskChangeTime(currentTime);
             }
@@ -159,7 +193,7 @@ public class Q1 : MonoBehaviour
                 {
                     Debug.LogError("third");
                     myButton.GetComponent<ButtonActivation>().ActivateButton();
-                    
+
                 }
                 else
                 {
