@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 using System.Threading;
-
+using System.Linq;
 
 public class CinemaGame : MonoBehaviour
 {
@@ -340,13 +340,14 @@ public class CinemaGame : MonoBehaviour
         Question[] list = { myQuestion1, myQuestion2, myQuestion3, myQuestion4, myQuestion5, myQuestion5, myQuestion6, myQuestion7, myQuestion8, myQuestion9, myQuestion10, myQuestion11, myQuestion12, myQuestion13, myQuestion14, myQuestion15, myQuestion16, myQuestion17, myQuestion18, myQuestion19, myQuestion20, myQuestion21, myQuestion22, myQuestion23 };
         HashSet<Question> questionSet = new HashSet<Question>();
 
-        System.Random systemRandom = new System.Random();
-        
+        // Use the current system time as the seed
+        int seed = (int)System.DateTime.Now.Ticks;
+        System.Random systemRandom = new System.Random(seed);
 
-        while(questionSet.Count <=5) 
+        while (questionSet.Count < 6)
         {
-            int randomNumber = systemRandom.Next(0, 22);
-            questionSet.Add(list[randomNumber]);
+            int randomIndex = systemRandom.Next(0, 23);
+            questionSet.Add(list[randomIndex]);
         }
 
         Question[] res = new Question[6];
