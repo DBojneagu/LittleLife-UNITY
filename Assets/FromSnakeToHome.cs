@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class HomeScene : MonoBehaviour
+public class FromSnakeToHome : MonoBehaviour
 {
     public Button sceneChangeButton;
     public int coinsPerStar = 100;
@@ -26,3 +26,4 @@ public class HomeScene : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 }
+
