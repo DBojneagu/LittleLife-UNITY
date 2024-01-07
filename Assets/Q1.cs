@@ -18,7 +18,7 @@ public class Q1 : MonoBehaviour
     public Q3 quest3;
 
     private const string LastTaskChangeKey = "LastTaskChangeTime";
-    private const float MinutesToWait = 5f; // 24 hours // Change this to 1 for one minute
+    private const float MinutesToWait = 7f; // 24 hours // Change this to 1 for one minute
 
     private void Awake()
     {

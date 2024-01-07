@@ -149,7 +149,7 @@ public class Q3 : MonoBehaviour
             Color textColor = taskText.color;
             textColor.a = 0.2f;
             taskText.color = textColor;
-            int points = PlayerPrefs.GetInt("PointsSnake");
+            int pointsSnake = PlayerPrefs.GetInt("PointsSnake");
 
             if (taskText.text.StartsWith("C"))
             {
@@ -158,13 +158,14 @@ public class Q3 : MonoBehaviour
             }
             if (taskText.text.StartsWith("T"))
             {
-                if (points >= 200)
+                if (pointsSnake >= 100)
                 {
                     Debug.LogError("second");
                     myButton.GetComponent<ButtonActivation3>().ActivateButton();
                 }
                 else
                 {
+                    Debug.LogError(pointsSnake);
                     textColor = taskText.color;
                     textColor.a = 1f;
                     taskText.color = textColor;
@@ -176,7 +177,7 @@ public class Q3 : MonoBehaviour
             }
             if (taskText.text.StartsWith("H"))
             {
-                if (points >= 100)
+                if (pointsSnake >= 200)
                 {
                     Debug.LogError("third");
                     myButton.GetComponent<ButtonActivation3>().ActivateButton();

@@ -83,7 +83,7 @@ public class CinemaGame : MonoBehaviour
             SetCanvasActive(cinemaCanvas, false);
             SwitchCanvasDisplay(endCanvas, 0);
             playerScoreText.text = playerScore.ToString();
-
+            PlayerPrefs.SetInt("Points", playerScore);
         }
     }
 
