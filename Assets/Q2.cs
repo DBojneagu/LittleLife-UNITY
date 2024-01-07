@@ -151,7 +151,7 @@ public class Q2 : MonoBehaviour
             taskText.color = textColor;
             int points = PlayerPrefs.GetInt("Points");
 
-            if (taskText.text.StartsWith("M"))
+            if (taskText.text.StartsWith("F"))
             {
                 Debug.LogError("first");
                 myButton.GetComponent<ButtonActivation2>().ActivateButton();
@@ -176,6 +176,7 @@ public class Q2 : MonoBehaviour
             }
             if (taskText.text.StartsWith("M"))
             {
+                Debug.LogError(points);
                 if (points >= 100)
                 {
                     Debug.LogError("third");
@@ -184,6 +185,7 @@ public class Q2 : MonoBehaviour
                 }
                 else
                 {
+                    
                     textColor = taskText.color;
                     textColor.a = 1f;
                     taskText.color = textColor;
