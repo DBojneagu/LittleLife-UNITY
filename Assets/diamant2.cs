@@ -28,11 +28,13 @@ public class Diamant2 : MonoBehaviour
 
     private void OnEnable()
     {
+        Debug.LogError("EROARE MARE EROARE MAREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     private void OnDisable()
     {
+        Debug.LogError("EROARE MARE EROARE MAREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE");
         SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
