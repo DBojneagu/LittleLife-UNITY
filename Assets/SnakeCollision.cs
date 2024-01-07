@@ -25,6 +25,7 @@ public class SnakeCollision : MonoBehaviour
         int isCompletedSnake = PlayerPrefs.GetInt("CompletedSnake");
         if (taskCompletion != null && isCompletedSnake == 0)
         {
+            Debug.Log("AICIIIIIIIIIIIIIIIIIIIIIIII111111111111111111");
             taskCompletion.isCompleted = true;
             PlayerPrefs.SetInt("CompletedSnake", 1);
             PlayerPrefs.Save();
