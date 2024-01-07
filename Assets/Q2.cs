@@ -30,9 +30,9 @@ public class Q2 : MonoBehaviour
         //PlayerPrefs.Save();
         taskTexts2 = new List<string>
         {
-            "Movie Night!\r\nComplete a quiz at the cinema!",
+            "Film Night!\r\nComplete a quiz at the cinema!",
             "Smarty?\r\nGet at least 250 points at the cinema!",
-            "Hi there!\r\nGo to the cinema and get at least 100 points!",
+            "Movie Buff?\r\nGo to the cinema and get at least 100 points!",
         };
         
 
@@ -91,9 +91,9 @@ public class Q2 : MonoBehaviour
         //PlayerPrefs.Save();
         taskTexts2 = new List<string>
         {
-            "Movie Night!\r\nComplete a quiz at the cinema!",
-            "Smart?\r\nGet at least 250 points at the cinema!",
-            "Hi there!\r\nGo to the cinema and get at least 100 points!",
+            "Film Night!\r\nComplete a quiz at the cinema!",
+            "Smarty?\r\nGet at least 250 points at the cinema!",
+            "Movie Buff?\r\nGo to the cinema and get at least 100 points!",
         };
 
 
@@ -174,7 +174,7 @@ public class Q2 : MonoBehaviour
                     PlayerPrefs.Save();
                 }
             }
-            if (taskText.text.StartsWith("H"))
+            if (taskText.text.StartsWith("M"))
             {
                 if (points >= 100)
                 {

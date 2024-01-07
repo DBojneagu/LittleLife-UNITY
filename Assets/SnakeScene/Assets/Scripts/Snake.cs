@@ -140,8 +140,10 @@ public class Snake : MonoBehaviour
         else if (other.gameObject.CompareTag("Obstacle"))
         {
             // Set game over text and score
+            int points = (segments.Count - initialSize) * 10;
             gameOverText.text = "Game Over! Score: " + (segments.Count - initialSize) * 10;
-
+            PlayerPrefs.SetInt("PointsSnake", points);
+            PlayerPrefs.Save(); 
             // Enable game over UI
             gameOverText.gameObject.SetActive(true);
 
