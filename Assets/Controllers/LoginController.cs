@@ -44,7 +44,6 @@ public class LoginController : MonoBehaviour
             }
         }
 
-        // Username and password combination doesn't exist
         return null;
     }
 }
