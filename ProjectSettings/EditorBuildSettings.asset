@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CinemaGame.unity
     guid: f72a96a7e82d7844f8318460496d1ce9
+  - enabled: 1
+    path: Assets/Scenes/LoginScene.unity
+    guid: f34fd34812bf8f949ae5ef07d421caaf
+  - enabled: 1
+    path: Assets/Scenes/SignUpScene.unity
+    guid: 2d79807284aa23f4a9a1c264361998c0
   m_configObjects: {}
