@@ -20,6 +20,8 @@ public class CoinCollision : MonoBehaviour
     {
         if (other.CompareTag("Coin"))
         {
+
+
             // Increment coin count
             int nrcoins= PlayerPrefs.GetInt("EarnedCoins");
             //nrcoins++;
