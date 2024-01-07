@@ -13,4 +13,6 @@ public class PopUpController : MonoBehaviour
             popUpObject.SetActive(!popUpObject.activeSelf);
         }
     }
+
+
 }
