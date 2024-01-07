@@ -1,6 +1,7 @@
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -9,7 +10,7 @@ public class CoinCollision : MonoBehaviour
 
     private Rigidbody _rigidbody;
     public float _respawnTime = 5.0f;
-    private int _countCoins = 0;
+    //private int _countCoins =PlayerPrefs.GetInt("EarnedCoins");
     public TextMeshProUGUI score;
 
     private void Awake() =>
@@ -20,7 +21,11 @@ public class CoinCollision : MonoBehaviour
         if (other.CompareTag("Coin"))
         {
             // Increment coin count
-            _countCoins++;
+            int nrcoins= PlayerPrefs.GetInt("EarnedCoins");
+            //nrcoins++;
+           nrcoins++;
+            PlayerPrefs.SetInt("EarnedCoins", nrcoins);
+            PlayerPrefs.Save();
             //Debug.Log(_countCoins);
 
             // Disable the coin
@@ -42,7 +47,9 @@ public class CoinCollision : MonoBehaviour
 
     private void Update()
     {
-        score.text = "Balance: " + _countCoins.ToString();
+        int nrcoins = PlayerPrefs.GetInt("EarnedCoins");
+        score.text = "Balance: " + nrcoins.ToString();
     }
 
 }
+

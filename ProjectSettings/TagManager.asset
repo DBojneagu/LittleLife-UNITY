@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Coin
+  - Cafea
+  - Fluid
+  - Snake
+  - Obstacle
+  - Camera
   layers:
   - Default
   - TransparentFX
