@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 namespace PW
 {
@@ -62,6 +63,16 @@ namespace PW
             int nrcoins = PlayerPrefs.GetInt("EarnedCoins");
             //nrcoins++;
             nrcoins+= coinsToAdd;
+
+            string userPath = Application.dataPath + "/Data/UserData.json";
+            string json = File.ReadAllText(userPath);
+            UserData user = JsonUtility.FromJson<UserData>(json);
+
+            user.Score += nrcoins;
+
+            json = JsonUtility.ToJson(user, true);
+            File.WriteAllText(userPath, json);
+
             PlayerPrefs.SetInt("EarnedCoins", nrcoins);
             PlayerPrefs.Save();
             DisplayStars(stars);

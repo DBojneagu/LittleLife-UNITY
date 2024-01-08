@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 using TMPro;
 using System;
 using System.Threading;
@@ -84,6 +85,15 @@ public class CinemaGame : MonoBehaviour
             SwitchCanvasDisplay(endCanvas, 0);
             playerScoreText.text = playerScore.ToString();
             PlayerPrefs.SetInt("Points", playerScore);
+
+            string userPath = Application.dataPath + "/Data/UserData.json";
+            string json = File.ReadAllText(userPath);
+            UserData user = JsonUtility.FromJson<UserData>(json);
+
+            user.Score += playerScore;
+
+            json = JsonUtility.ToJson(user, true);
+            File.WriteAllText(userPath, json);
         }
     }
 
