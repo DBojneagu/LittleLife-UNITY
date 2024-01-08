@@ -1,16 +1,18 @@
 ﻿using System.Collections;
+using System.Diagnostics;
+using static System.Diagnostics.Debug;
+using System.IO;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+
 [RequireComponent(typeof(Rigidbody))]
 public class CoinCollision : MonoBehaviour
 {
-
     private Rigidbody _rigidbody;
     public float _respawnTime = 5.0f;
-    //private int _countCoins =PlayerPrefs.GetInt("EarnedCoins");
     public TextMeshProUGUI score;
 
     private void Awake() =>
@@ -20,15 +22,18 @@ public class CoinCollision : MonoBehaviour
     {
         if (other.CompareTag("Coin"))
         {
-
+            string userPath = Application.dataPath + "/Data/UserData.json";
+            string json = File.ReadAllText(userPath);
+            UserData user = JsonUtility.FromJson<UserData>(json);
+            user.Score++;
+            json = JsonUtility.ToJson(user, true);
+            File.WriteAllText(userPath, json);
 
             // Increment coin count
             int nrcoins= PlayerPrefs.GetInt("EarnedCoins");
-            //nrcoins++;
-           nrcoins++;
+            nrcoins++;
             PlayerPrefs.SetInt("EarnedCoins", nrcoins);
             PlayerPrefs.Save();
-            //Debug.Log(_countCoins);
 
             // Disable the coin
             other.gameObject.SetActive(false);
@@ -49,8 +54,12 @@ public class CoinCollision : MonoBehaviour
 
     private void Update()
     {
+        string userPath = Application.dataPath + "/Data/UserData.json";
+        string json = File.ReadAllText(userPath);
+        UserData user = JsonUtility.FromJson<UserData>(json);
+
         int nrcoins = PlayerPrefs.GetInt("EarnedCoins");
-        score.text = "Balance: " + nrcoins.ToString();
+        score.text = user.Score.ToString();
     }
 
 }

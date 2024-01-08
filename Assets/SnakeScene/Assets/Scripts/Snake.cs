@@ -3,6 +3,8 @@ using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
+
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Snake : MonoBehaviour
@@ -141,6 +143,16 @@ public class Snake : MonoBehaviour
         {
             // Set game over text and score
             int points = (segments.Count - initialSize) * 10;
+
+            string userPath = Application.dataPath + "/Data/UserData.json";
+            string json = File.ReadAllText(userPath);
+            UserData user = JsonUtility.FromJson<UserData>(json);
+
+            user.Score += points;
+
+            json = JsonUtility.ToJson(user, true);
+            File.WriteAllText(userPath, json);
+
             gameOverText.text = "Game Over! Score: " + (segments.Count - initialSize) * 10;
             PlayerPrefs.SetInt("PointsSnake", points);
             PlayerPrefs.Save(); 
