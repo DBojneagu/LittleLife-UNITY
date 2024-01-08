@@ -36,11 +36,9 @@ public class ButtonActivation : MonoBehaviour
         PlayerPrefs.Save();
     }
 
-
     // This method will be called when the button is clicked
     public void ActivateButton()
     {
-        Debug.Log("Button Activated!");
         gameObject.SetActive(true);
     }
     public void DezActivateButton()

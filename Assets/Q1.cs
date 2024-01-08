@@ -170,7 +170,6 @@ public class Q1 : MonoBehaviour
             {
                 Debug.LogError("first");
                 myButton.GetComponent<ButtonActivation>().ActivateButton();
-                Debug.LogError("AICIIIIIIIIII");
             }
             if (taskText.text.StartsWith("T"))
             {

@@ -11,7 +11,7 @@ public class gameMain : MonoBehaviour
         float playerZ = PlayerPrefs.GetFloat("PlayerZ", -9f);
 
         // Set the player's position
-        playerTransform.position = new Vector3(playerX-1f, playerY, playerZ);
+        playerTransform.position = new Vector3(playerX, playerY, playerZ);
     }
     private void OnDestroy()
     {
