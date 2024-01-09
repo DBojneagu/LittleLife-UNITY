@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class RaceScore : MonoBehaviour
 {
@@ -11,8 +13,22 @@ public class RaceScore : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI scoreUI;
 
-    // public GameOverScreen gameOverScreen;
+    [SerializeField]
+    private TextMeshProUGUI finalScoreUI;
 
+    public GameObject panel;
+
+    public string sceneToLoad;
+
+    public Button sceneChangeButton;
+    void Start()
+    {
+        sceneChangeButton.onClick.AddListener(ChangeScene);
+    }
+    void ChangeScene()
+    {
+        SceneManager.LoadScene(sceneToLoad);
+    }
     void Update()
     {
         scoreUI.text = "Score: " + score.ToString();
@@ -23,12 +39,14 @@ public class RaceScore : MonoBehaviour
         if(other.gameObject.tag == "Rail")
         {
             score -= 20;
+            scoreUI.text = "Score: " + score.ToString();
         }
 
         if(other.gameObject.tag == "Finish")
         {
-            // gameOverScreen.Setup(score);
-            SceneManager.LoadScene("WelcomeScene");
+            panel.SetActive(true);
+            finalScoreUI.text = score.ToString() + " Diamonds";
+            //SceneManager.LoadScene("WelcomeScene");
         }
     }
 }
