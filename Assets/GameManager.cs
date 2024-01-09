@@ -68,7 +68,7 @@ namespace PW
             string json = File.ReadAllText(userPath);
             UserData user = JsonUtility.FromJson<UserData>(json);
 
-            user.Score += coinsToAdd;
+            user.Score += nrcoins;
 
             json = JsonUtility.ToJson(user, true);
             File.WriteAllText(userPath, json);
