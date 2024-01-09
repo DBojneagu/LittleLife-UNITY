@@ -16,6 +16,7 @@ public class Q1 : MonoBehaviour
     public Button myButton;
     public Q2 quest2;
     public Q3 quest3;
+    public Q44 quest4;
 
     private const string LastTaskChangeKey = "LastTaskChangeTime";
     private const float MinutesToWait = 7f; // 24 hours // Change this to 1 for one minute
@@ -121,6 +122,7 @@ public class Q1 : MonoBehaviour
                 taskText.text = taskTexts[randomIndex];
                 quest2.SelectTask();
                 quest3.SelectTask();
+                quest4.SelectTask();
                 // Update the last task change time
                 SaveLastTaskChangeTime(currentTime);
             }

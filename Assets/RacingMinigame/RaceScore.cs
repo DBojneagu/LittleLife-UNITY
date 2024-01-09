@@ -46,6 +46,7 @@ public class RaceScore : MonoBehaviour
         {
             panel.SetActive(true);
             finalScoreUI.text = score.ToString() + " Diamonds";
+            PlayerPrefs.SetInt("PointsRace", score);
             //SceneManager.LoadScene("WelcomeScene");
         }
     }
