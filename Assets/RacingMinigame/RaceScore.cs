@@ -16,22 +16,37 @@ public class RaceScore : MonoBehaviour
     [SerializeField]
     private TextMeshProUGUI finalScoreUI;
 
+    private int coneCount = 0;
+
+    [SerializeField]
+    private TextMeshProUGUI coneCountUI;
+
+    [SerializeField]
+    private TextMeshProUGUI finalConeCountUI;
+
     public GameObject panel;
 
     public string sceneToLoad;
 
     public Button sceneChangeButton;
+
+    public AudioClip collectSound;
+
+    public GameObject collectEffect;
+
     void Start()
     {
         sceneChangeButton.onClick.AddListener(ChangeScene);
     }
+
+    private void Update()
+    {
+        scoreUI.text = "Score: " + score.ToString();
+        coneCountUI.text = "Cones: " + coneCount.ToString();
+    }
     void ChangeScene()
     {
         SceneManager.LoadScene(sceneToLoad);
-    }
-    void Update()
-    {
-        scoreUI.text = "Score: " + score.ToString();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -42,12 +57,30 @@ public class RaceScore : MonoBehaviour
             scoreUI.text = "Score: " + score.ToString();
         }
 
-        if(other.gameObject.tag == "Finish")
+        if(other.gameObject.tag == "Cone")
+        {
+            coneCount++;
+            coneCountUI.text = "Cones: " + coneCount.ToString();
+            Collect();
+            other.gameObject.SetActive(false);
+
+        }
+
+        if (other.gameObject.tag == "Finish")
         {
             panel.SetActive(true);
-            finalScoreUI.text = score.ToString() + " Diamonds";
+            finalScoreUI.text = "Score: " + score.ToString();
+            finalConeCountUI.text = "Cones Collected: " + coneCount.ToString();
             PlayerPrefs.SetInt("PointsRace", score);
-            //SceneManager.LoadScene("WelcomeScene");
         }
+    }
+
+    public void Collect()
+    {
+        //Debug.Log("in cone effect");
+        if (collectSound)
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+        if (collectEffect)
+            Instantiate(collectEffect, transform.position, Quaternion.identity);
     }
 }
