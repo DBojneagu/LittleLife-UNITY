@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,10 @@ using UnityEngine.UI;
 public class RaceScore : MonoBehaviour
 {
     private int score = 500;
+
+    private int finalScore;
+
+    private int finalCones;
 
     [SerializeField]
     private TextMeshProUGUI scoreUI;
@@ -69,9 +74,21 @@ public class RaceScore : MonoBehaviour
         if (other.gameObject.tag == "Finish")
         {
             panel.SetActive(true);
-            finalScoreUI.text = "Score: " + score.ToString();
-            finalConeCountUI.text = "Cones Collected: " + coneCount.ToString();
-            PlayerPrefs.SetInt("PointsRace", score);
+            finalScore = score;
+            finalScoreUI.text = "Score: " + finalScore.ToString();
+
+            string userPath = Application.dataPath + "/Data/UserData.json";
+            string json = File.ReadAllText(userPath);
+            UserData user = JsonUtility.FromJson<UserData>(json);
+
+            user.Score += finalScore;
+
+            json = JsonUtility.ToJson(user, true);
+            File.WriteAllText(userPath, json);
+
+            finalCones = coneCount;
+            finalConeCountUI.text = "Cones Collected: " + finalCones.ToString();
+            PlayerPrefs.SetInt("PointsRace", finalScore);
         }
     }
 

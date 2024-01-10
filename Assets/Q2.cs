@@ -37,7 +37,7 @@ public class Q2 : MonoBehaviour
         
 
         int isCompletedMovie = PlayerPrefs.GetInt("CompletedMovie");
-        Debug.LogError(isCompletedMovie);
+        Debug.Log(isCompletedMovie);
         if (isCompletedMovie == 1)
         {
             Color textColor = taskText.color;
@@ -74,9 +74,11 @@ public class Q2 : MonoBehaviour
                 taskText.color = textColor;
                 // Pick a random index from the list
                 int randomIndex = UnityEngine.Random.Range(0, taskTexts2.Count);
+                Debug.Log(taskTexts2);
 
                 // Set the task text based on the random index
-                taskText.text = taskTexts2[randomIndex];
+                taskText.text = taskTexts2[0];
+                
 
     }
     private void Start()
