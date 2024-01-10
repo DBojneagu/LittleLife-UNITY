@@ -12,6 +12,8 @@ TagManager:
   - Camera
   - Rail
   - Ferrari
+  - Cone
+  - Car
   layers:
   - Default
   - TransparentFX
