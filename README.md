@@ -11,7 +11,7 @@ When the player touches the 3D coffee symbol a new scene opens with a cafe where
     <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/9901872a-a519-4fc2-9f64-df5d99ab6c99" alt="image" width="600px">
 </div>
 ## Review
-[Here](https://github.com/DBojneagu/TitleTODO-UNITY/issues) you can write your review for the current sprint.
+[Here](https://github.com/DBojneagu/LittleLife-UNITY/issues) you can write your review for the current sprint.
 
 ## Team
 - [David Bojneagu](https://github.com/DBojneagu)
