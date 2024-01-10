@@ -34,13 +34,13 @@ namespace PW
 
             float curTime = totalTimeGoingToSlot;
 
-            Vector3 centerPos = Camera.main.ViewportToWorldPoint(viewPositionOfSlots);
-            Vector3 totalDist = (centerPos - transform.position);
+            //Vector3 centerPos = Camera.main.ViewportToWorldPoint();
+            //Vector3 totalDist = (centerPos - transform.position);
 
             while (curTime > 0)
             {
                 float timePassed = Time.deltaTime;
-                transform.position += timePassed * totalDist / totalTimeGoingToSlot;
+                //transform.position += timePassed * totalDist / totalTimeGoingToSlot;
                 curTime -= timePassed;
                 yield return null;
             }
