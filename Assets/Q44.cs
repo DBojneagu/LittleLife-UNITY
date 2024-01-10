@@ -37,7 +37,7 @@ public class Q44 : MonoBehaviour
 
 
         int isCompletedRace = PlayerPrefs.GetInt("CompletedRace");
-        Debug.LogError(isCompletedRace);
+        Debug.Log(isCompletedRace);
         if (isCompletedRace == 1)
         {
             Color textColor = taskText.color;
