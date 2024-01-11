@@ -98,7 +98,7 @@ public class Q3 : MonoBehaviour
 
 
         int isCompletedSnake = PlayerPrefs.GetInt("CompletedSnake");
-        Debug.LogError(isCompletedSnake);
+        Debug.Log(isCompletedSnake);
         if (isCompletedSnake == 1)
         {
             Color textColor = taskText.color;

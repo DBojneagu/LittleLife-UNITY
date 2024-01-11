@@ -98,7 +98,7 @@ public class Q44 : MonoBehaviour
 
 
         int isCompletedRace = PlayerPrefs.GetInt("CompletedRace");
-        Debug.LogError(isCompletedRace);
+        Debug.Log(isCompletedRace);
         if (isCompletedRace == 1)
         {
             Color textColor = taskText.color;
@@ -141,8 +141,8 @@ public class Q44 : MonoBehaviour
     public void BlurTask()
     {
         int isCompletedRace = PlayerPrefs.GetInt("CompletedRace");
-        Debug.LogError(isCompletedRace);
-        Debug.LogError(taskText.text);
+        Debug.Log(isCompletedRace);
+        Debug.Log(taskText.text);
         if (taskText != null && isCompletedRace == 1)
         {
             // Set the alpha (transparency) of the text to 0
@@ -153,7 +153,7 @@ public class Q44 : MonoBehaviour
 
             if (taskText.text.StartsWith("r"))
             {
-                Debug.LogError("first");
+                Debug.Log("first");
                 myButton.GetComponent<ButtonActivation4>().ActivateButton();
             }
             if (taskText.text.StartsWith("T"))
@@ -165,12 +165,12 @@ public class Q44 : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogError(pointsSnake);
+                    Debug.Log(pointsSnake);
                     textColor = taskText.color;
                     textColor.a = 1f;
                     taskText.color = textColor;
                     myButton.GetComponent<ButtonActivation4>().DezActivateButton();
-                    Debug.LogError("second");
+                    Debug.Log("second");
                     PlayerPrefs.SetInt("CompletedRace", 0);
                     PlayerPrefs.Save();
                 }
@@ -179,7 +179,7 @@ public class Q44 : MonoBehaviour
             {
                 if (pointsSnake >= 200)
                 {
-                    Debug.LogError("third");
+                    Debug.Log("third");
                     myButton.GetComponent<ButtonActivation4>().ActivateButton();
 
                 }
@@ -189,7 +189,7 @@ public class Q44 : MonoBehaviour
                     textColor.a = 1f;
                     taskText.color = textColor;
                     myButton.GetComponent<ButtonActivation4>().DezActivateButton();
-                    Debug.LogError("third");
+                    Debug.Log("third");
                     PlayerPrefs.SetInt("CompletedRace", 0);
                     PlayerPrefs.Save();
                 }
@@ -200,11 +200,11 @@ public class Q44 : MonoBehaviour
         {
             if (isCompletedRace == 0 || isCompletedRace == null)
             {
-                Debug.LogError("all good");
+                Debug.Log("all good");
             }
             else
             {
-                Debug.LogError("TextMeshProUGUI component not assigned to TaskCompletion script.");
+                Debug.Log("TextMeshProUGUI component not assigned to TaskCompletion script.");
             }
         }
     }
