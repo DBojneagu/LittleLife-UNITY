@@ -2,30 +2,28 @@ using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    public static GameObject currentCharacter;
+    public GameObject currentCharacter;
+    public CameraFollow cameraFollow; // Reference to the CameraFollow script
 
     private void Start()
     {
         // Example: Initialize currentCharacter by finding the initial character in the scene
         currentCharacter = GameObject.FindWithTag("Player");
+        cameraFollow = Camera.main.GetComponent<CameraFollow>();
+
+        // Set the initial character as the target for the camera
+        if (currentCharacter != null && cameraFollow != null)
+        {
+            cameraFollow.SetTarget(currentCharacter.transform);
+        }
     }
 
-    public static void SetCurrentCharacter(GameObject newCharacter)
-    {
-        currentCharacter = newCharacter;
-    }
-
-    public static void SwitchCharacter(GameObject newCharacterPrefab)
+    public void SwitchCharacter(GameObject newCharacter)
     {
         Debug.LogWarning("entered switch!");
 
-        Debug.LogWarning(newCharacterPrefab.name);
-
-        if (newCharacterPrefab != null)
+        if (newCharacter != null)
         {
-            // Instantiate the new character prefab
-            GameObject newCharacter = Instantiate(newCharacterPrefab, Vector3.zero, Quaternion.identity);
-
             // Optionally, copy the position and rotation from the current character to the new character
             if (currentCharacter != null)
             {
@@ -33,15 +31,38 @@ public class CharacterManager : MonoBehaviour
                 newCharacter.transform.rotation = currentCharacter.transform.rotation;
             }
 
-            // Destroy the current character GameObject
-            Destroy(currentCharacter);
+            // Log current and new character positions and rotations
+            Debug.Log($"Current Character Position: {currentCharacter.transform.position}");
+            Debug.Log($"Current Character Rotation: {currentCharacter.transform.rotation.eulerAngles}");
+
+            Debug.Log($"New Character Position: {newCharacter.transform.position}");
+            Debug.Log($"New Character Rotation: {newCharacter.transform.rotation.eulerAngles}");
+
+
+            // Deactivate the current character GameObject
+            if (currentCharacter != null)
+            {
+                currentCharacter.SetActive(false);
+            }
 
             // Set the new character as the current character
-            SetCurrentCharacter(newCharacter);
+            currentCharacter = newCharacter;
+
+            // Activate the new character GameObject
+            if (currentCharacter != null)
+            {
+                currentCharacter.SetActive(true);
+            }
+
+            // Set the new character as the target for the camera
+            if (cameraFollow != null)
+            {
+                cameraFollow.SetTarget(currentCharacter.transform);
+            }
         }
         else
         {
-            Debug.LogWarning("New character prefab not assigned!");
+            Debug.LogWarning("New character not assigned!");
         }
     }
 }
