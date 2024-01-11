@@ -158,8 +158,8 @@ public class Q1 : MonoBehaviour
     public void BlurTask()
     {
         int isCompletedCafe = PlayerPrefs.GetInt("CompletedCafe");
-        Debug.LogError(isCompletedCafe);
-        Debug.LogError(taskText.text);
+        Debug.Log(isCompletedCafe);
+        Debug.Log(taskText.text);
         if (taskText != null && isCompletedCafe == 1)
         {
             // Set the alpha (transparency) of the text to 0
@@ -170,14 +170,14 @@ public class Q1 : MonoBehaviour
 
             if (taskText.text.StartsWith("C"))
             {
-                Debug.LogError("first");
+                Debug.Log("first");
                 myButton.GetComponent<ButtonActivation>().ActivateButton();
             }
             if (taskText.text.StartsWith("T"))
             {
                 if (stars >= 2)
                 {
-                    Debug.LogError("second");
+                    Debug.Log("second");
                     myButton.GetComponent<ButtonActivation>().ActivateButton();
                 }
                 else
@@ -186,7 +186,7 @@ public class Q1 : MonoBehaviour
                     textColor.a = 1f;
                     taskText.color = textColor;
                     myButton.GetComponent<ButtonActivation>().DezActivateButton();
-                    Debug.LogError("second");
+                    Debug.Log("second");
                     PlayerPrefs.SetInt("CompletedCafe", 0);
                     PlayerPrefs.Save();
                 }
@@ -195,7 +195,7 @@ public class Q1 : MonoBehaviour
             {
                 if (stars >= 1)
                 {
-                    Debug.LogError("third");
+                    Debug.Log("third");
                     myButton.GetComponent<ButtonActivation>().ActivateButton();
 
                 }
@@ -205,7 +205,7 @@ public class Q1 : MonoBehaviour
                     textColor.a = 1f;
                     taskText.color = textColor;
                     myButton.GetComponent<ButtonActivation>().DezActivateButton();
-                    Debug.LogError("third");
+                    Debug.Log("third");
                     PlayerPrefs.SetInt("CompletedCafe", 0);
                     PlayerPrefs.Save();
                 }
@@ -216,11 +216,11 @@ public class Q1 : MonoBehaviour
         {
             if (isCompletedCafe == 0 || isCompletedCafe == null)
             {
-                Debug.LogError("all good");
+                Debug.Log("all good");
             }
             else
             {
-                Debug.LogError("TextMeshProUGUI component not assigned to TaskCompletion script.");
+                Debug.Log("TextMeshProUGUI component not assigned to TaskCompletion script.");
             }
         }
     }

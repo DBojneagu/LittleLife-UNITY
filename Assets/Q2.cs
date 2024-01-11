@@ -72,13 +72,16 @@ public class Q2 : MonoBehaviour
                 Color textColor = taskText.color;
                 textColor.a = 1f;
                 taskText.color = textColor;
-                // Pick a random index from the list
-                int randomIndex = UnityEngine.Random.Range(0, taskTexts2.Count);
-                Debug.Log(taskTexts2);
 
-                // Set the task text based on the random index
-                taskText.text = taskTexts2[0];
-                
+                if (taskTexts2 is not null)
+                {
+                    // Pick a random index from the list
+                    int randomIndex = UnityEngine.Random.Range(0, taskTexts2.Count);
+
+                    if (randomIndex > 0)
+                        // Set the task text based on the random index
+                        taskText.text = taskTexts2[randomIndex];
+        }
 
     }
     private void Start()
@@ -100,7 +103,7 @@ public class Q2 : MonoBehaviour
 
 
         int isCompletedMovie = PlayerPrefs.GetInt("CompletedMovie");
-        Debug.LogError(isCompletedMovie);
+        Debug.Log(isCompletedMovie);
         if (isCompletedMovie == 1)
         {
             Color textColor = taskText.color;
@@ -143,8 +146,8 @@ public class Q2 : MonoBehaviour
     public void BlurTask()
     {
         int isCompletedMovie = PlayerPrefs.GetInt("CompletedMovie");
-        Debug.LogError(isCompletedMovie);
-        Debug.LogError(taskText.text);
+        Debug.Log(isCompletedMovie);
+        Debug.Log(taskText.text);
         if (taskText != null && isCompletedMovie == 1)
         {
             // Set the alpha (transparency) of the text to 0
@@ -155,14 +158,14 @@ public class Q2 : MonoBehaviour
 
             if (taskText.text.StartsWith("F"))
             {
-                Debug.LogError("first");
+                Debug.Log("first");
                 myButton.GetComponent<ButtonActivation2>().ActivateButton();
             }
             if (taskText.text.StartsWith("S"))
             {
                 if (points >= 250)
                 {
-                    Debug.LogError("second");
+                    Debug.Log("second");
                     myButton.GetComponent<ButtonActivation2>().ActivateButton();
                 }
                 else
@@ -171,17 +174,17 @@ public class Q2 : MonoBehaviour
                     textColor.a = 1f;
                     taskText.color = textColor;
                     myButton.GetComponent<ButtonActivation2>().DezActivateButton();
-                    Debug.LogError("second");
+                    Debug.Log("second");
                     PlayerPrefs.SetInt("CompletedMovie", 0);
                     PlayerPrefs.Save();
                 }
             }
             if (taskText.text.StartsWith("M"))
             {
-                Debug.LogError(points);
+                Debug.Log(points);
                 if (points >= 100)
                 {
-                    Debug.LogError("third");
+                    Debug.Log("third");
                     myButton.GetComponent<ButtonActivation2>().ActivateButton();
 
                 }
@@ -192,7 +195,7 @@ public class Q2 : MonoBehaviour
                     textColor.a = 1f;
                     taskText.color = textColor;
                     myButton.GetComponent<ButtonActivation2>().DezActivateButton();
-                    Debug.LogError("third");
+                    Debug.Log("third");
                     PlayerPrefs.SetInt("CompletedMovie", 0);
                     PlayerPrefs.Save();
                 }
@@ -203,11 +206,11 @@ public class Q2 : MonoBehaviour
         {
             if (isCompletedMovie == 0 || isCompletedMovie == null)
             {
-                Debug.LogError("all good");
+                Debug.Log("all good");
             }
             else
             {
-                Debug.LogError("TextMeshProUGUI component not assigned to TaskCompletion script.");
+                Debug.Log("TextMeshProUGUI component not assigned to TaskCompletion script.");
             }
         }
     }
