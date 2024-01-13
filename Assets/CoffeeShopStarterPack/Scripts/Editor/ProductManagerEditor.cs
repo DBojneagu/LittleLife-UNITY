@@ -270,12 +270,8 @@ namespace PW
                 var regenBool = product.FindPropertyRelative("RegenerateProduct");
                 var plateOffset = product.FindPropertyRelative("plateOffset");
 
-                //These gameObjects has a hierarchy of multiple meshes
-                //So we just try to generate a boxcollider for this object at the root.
-                //This collider will enable MouseDown events for the object.
-                FindBoundsOfPrefabAndAddABoxCollider(newPrefabGo);
+                //FindBoundsOfPrefabAndAddABoxCollider(newPrefabGo);
 
-                //Set values specific for productTypes
                 switch (pType)
                 {
                     case ProductType.Cookable:
@@ -370,18 +366,18 @@ namespace PW
 
         }
 
-        static void FindBoundsOfPrefabAndAddABoxCollider(GameObject prefab)
-        {
-            Bounds prefab_bounds = prefab.transform.EncapsulateBounds();
+        //static void FindBoundsOfPrefabAndAddABoxCollider(GameObject prefab)
+        //{
+        //    Bounds prefab_bounds = prefab.transform.EncapsulateBounds();
 
-            var coll = prefab.GetComponent<Collider>();
-            if (coll == null)
-            {
-                var boxColl = prefab.AddComponent<BoxCollider>();
-                boxColl.size = prefab_bounds.size;
-                boxColl.center = prefab_bounds.center;
-            }
+        //    var coll = prefab.GetComponent<Collider>();
+        //    if (coll == null)
+        //    {
+        //        var boxColl = prefab.AddComponent<BoxCollider>();
+        //        boxColl.size = prefab_bounds.size;
+        //        boxColl.center = prefab_bounds.center;
+        //    }
             
-        }
+        //}
     }
 }

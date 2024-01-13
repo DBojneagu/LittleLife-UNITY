@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 namespace PW
 {
@@ -62,6 +63,16 @@ namespace PW
             int nrcoins = PlayerPrefs.GetInt("EarnedCoins");
             //nrcoins++;
             nrcoins+= coinsToAdd;
+
+            string userPath = Application.dataPath + "/Data/UserData.json";
+            string json = File.ReadAllText(userPath);
+            UserData user = JsonUtility.FromJson<UserData>(json);
+
+            user.Score += nrcoins;
+
+            json = JsonUtility.ToJson(user, true);
+            File.WriteAllText(userPath, json);
+
             PlayerPrefs.SetInt("EarnedCoins", nrcoins);
             PlayerPrefs.Save();
             DisplayStars(stars);
@@ -99,17 +110,16 @@ namespace PW
                 Destroy(child.gameObject);
             }
 
-            // Duplicate the existing star image based on the number of stars
+ 
             for (int i = 0; i < 3; i++)
             {
                 GameObject star = Instantiate(starIcon.gameObject);
                 star.transform.SetParent(finishPanel.transform);
                 star.SetActive(true);
 
-                // Calculate the alpha (transparency) based on the current star's position
                 float alpha = i < stars ? 1f : 0.3f; // Adjust the alpha values as needed
 
-                // Set the alpha of the star image
+
                 Image starImage = star.GetComponent<Image>();
                 Color starColor = starImage.color;
                 starColor.a = alpha;
@@ -151,7 +161,7 @@ namespace PW
                 {
                     starSize = 70f;
                 }
-                // Adjust the size based on your requirements
+                
                 starRectTransform.sizeDelta = new Vector2(starSize, starSize);
             }
         }

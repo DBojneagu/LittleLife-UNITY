@@ -1,4 +1,4 @@
-# TitleTODO-UNITY
+# Little Life
 Our plan is to work on a world simulation game that is point&click based, with various mini-games inside the map. It is an endless game, so the main goal is to advance in levels and discover the real complexity of the game. The money you collect during the game can be used to improve your game experience.
 
 During the second sprint we added a character that can move around our map using the WASD keys. You can now accumulate diamonds that will help you later in the game by passing through them.
@@ -11,7 +11,7 @@ When the player touches the 3D coffee symbol a new scene opens with a cafe where
     <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/9901872a-a519-4fc2-9f64-df5d99ab6c99" alt="image" width="600px">
 </div>
 ## Review
-[Here](https://github.com/DBojneagu/TitleTODO-UNITY/issues) you can write your review for the current sprint.
+[Here](https://github.com/DBojneagu/LittleLife-UNITY/issues) you can write your review for the current sprint.
 
 ## Team
 - [David Bojneagu](https://github.com/DBojneagu)
