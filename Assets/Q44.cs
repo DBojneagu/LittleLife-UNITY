@@ -30,9 +30,9 @@ public class Q44 : MonoBehaviour
         //PlayerPrefs.Save();
         taskTexts4 = new List<string>
         {
-            "race1!\r\nScore at least 100 !",
-            "race2!\r\nScore at least 100 !",
-            "race3!\r\nScore at least 100 !",
+            "Race Time!\r\nPlay the race game at the police station!",
+            "Are you fast enough?\r\nGo to the police station and score at least 350 !",
+            "Details matter!\r\nCollect at least 10 cones at the police station !",
         };
 
 
@@ -91,9 +91,9 @@ public class Q44 : MonoBehaviour
         //PlayerPrefs.Save();
         taskTexts4 = new List<string>
         {
-            "race1!\r\nScore at least 100 !",
-            "2race!\r\nScore at least 100 !",
-            "3race1\r\nScore at least 100 !",
+            "Race Time!\r\nPlay the race game at the police station!",
+            "Are you fast enough?\r\nGo to the police station and score at least 350 !",
+            "Details matter!\r\nCollect at least 10 cones at the police station !",
         };
 
 
@@ -150,15 +150,16 @@ public class Q44 : MonoBehaviour
             textColor.a = 0.2f;
             taskText.color = textColor;
             int pointsSnake = PlayerPrefs.GetInt("PointsRace");
+            int cones = PlayerPrefs.GetInt("Cones");
 
-            if (taskText.text.StartsWith("r"))
+            if (taskText.text.StartsWith("R"))
             {
                 Debug.Log("first");
                 myButton.GetComponent<ButtonActivation4>().ActivateButton();
             }
-            if (taskText.text.StartsWith("T"))
+            if (taskText.text.StartsWith("A"))
             {
-                if (pointsSnake >= 100)
+                if (pointsSnake >= 350)
                 {
                     Debug.LogError("second");
                     myButton.GetComponent<ButtonActivation4>().ActivateButton();
@@ -175,9 +176,9 @@ public class Q44 : MonoBehaviour
                     PlayerPrefs.Save();
                 }
             }
-            if (taskText.text.StartsWith("H"))
+            if (taskText.text.StartsWith("D"))
             {
-                if (pointsSnake >= 200)
+                if (cones >= 10)
                 {
                     Debug.Log("third");
                     myButton.GetComponent<ButtonActivation4>().ActivateButton();
