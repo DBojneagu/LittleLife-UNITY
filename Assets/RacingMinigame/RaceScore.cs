@@ -89,7 +89,6 @@ public class RaceScore : MonoBehaviour
             finalCones = coneCount;
             finalConeCountUI.text = "Cones Collected: " + finalCones.ToString();
             PlayerPrefs.SetInt("PointsRace", finalScore);
-            PlayerPrefs.SetInt("Cones", finalCones);
         }
     }
 

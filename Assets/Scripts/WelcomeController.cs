@@ -16,14 +16,4 @@ public class WelcomeController : MonoBehaviour
 
         SceneManager.LoadScene("SampleScene");
     }
-
-    public void Continue()
-    {
-        string userPath = Application.dataPath + "/Data/UserData.json";
-
-        string json = File.ReadAllText(userPath);
-        UserData user = JsonUtility.FromJson<UserData>(json);
-
-        SceneManager.LoadScene("SampleScene");
-    }
 }
