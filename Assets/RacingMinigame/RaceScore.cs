@@ -54,14 +54,17 @@ public class RaceScore : MonoBehaviour
         SceneManager.LoadScene(sceneToLoad);
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
-        if(other.gameObject.tag == "Rail")
+        if(collision.gameObject.tag == "Rail")
         {
             score -= 20;
             scoreUI.text = "Score: " + score.ToString();
         }
+    }
 
+    private void OnTriggerEnter(Collider other)
+    {
         if(other.gameObject.tag == "Cone")
         {
             coneCount++;
