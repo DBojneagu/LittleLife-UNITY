@@ -2,19 +2,22 @@ using UnityEngine;
 
 public class BuyCharacter : MonoBehaviour
 {
-    private int userMoney = 25; // Initial user money
-    public GameObject newCharacterPrefab; // Reference to the prefab of the new character
+    private int userMoney = 500; // Initial user money
     private CharacterManager characterManager; // Reference to the CharacterManager script
     public GameObject bird;
     public GameObject gecko;
     public GameObject deer;
+    public GameObject monkey;
+    public GameObject fish;
+    public GameObject mouse;
+    public GameObject squid;
+    public GameObject snake;
+
 
     private void Start()
     {
         // Find the CharacterManager script in the scene
         characterManager = FindObjectOfType<CharacterManager>();
-
-        Debug.Log(newCharacterPrefab.name);
 
         if (characterManager == null)
         {
@@ -24,42 +27,42 @@ public class BuyCharacter : MonoBehaviour
 
     public void BuyCharacter1()
     {
-        BuyCharacters("Bird", 10, bird);
+        BuyCharacters("Bird", 50, bird);
     }
 
     public void BuyCharacter2()
     {
-        BuyCharacters("Monkey", 20, null);
+        BuyCharacters("Monkey", 100, monkey);
     }
 
     public void BuyCharacter3()
     {
-        BuyCharacters("Squid", 30, null);
+        BuyCharacters("Squid", 350, squid);
     }
 
     public void BuyCharacter4()
     {
-        BuyCharacters("Deer", 10, deer);
+        BuyCharacters("Deer", 0, deer);
     }
 
     public void BuyCharacter5()
     {
-        BuyCharacters("Snake", 50, null);
+        BuyCharacters("Snake", 200, snake);
     }
 
     public void BuyCharacter6()
     {
-        BuyCharacters("Mouse", 60, null);
+        BuyCharacters("Mouse", 150, mouse);
     }
 
     public void BuyCharacter7()
     {
-        BuyCharacters("Gecko", 10, gecko);
+        BuyCharacters("Gecko", 300, gecko);
     }
 
     public void BuyCharacter8()
     {
-        BuyCharacters("Fish", 80, null);
+        BuyCharacters("Fish", 250, fish);
     }
 
     private void BuyCharacters(string characterName, int characterPrice, GameObject specificCharacter)
@@ -75,11 +78,11 @@ public class BuyCharacter : MonoBehaviour
                 // If a specific character is provided, switch to that character
                 characterManager.SwitchCharacter(specificCharacter);
             }
-            else
+/*            else
             {
                 // If no specific character is provided, use the default newCharacterPrefab
                 characterManager.SwitchCharacter(newCharacterPrefab);
-            }
+            }*/
         }
         else
         {

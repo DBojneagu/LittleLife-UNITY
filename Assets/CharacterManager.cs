@@ -27,6 +27,15 @@ public class CharacterManager : MonoBehaviour
             // Optionally, copy the position and rotation from the current character to the new character
             if (currentCharacter != null)
             {
+                /*float yOffset = 0f;
+                float f = 0.0f;
+                decimal dec = new decimal(f);
+                double d = (double)dec; 
+                newCharacter.transform.position = new Vector3(
+                currentCharacter.transform.position.x,
+                (float)d,
+                currentCharacter.transform.position.z
+            );*/
                 newCharacter.transform.position = currentCharacter.transform.position;
                 newCharacter.transform.rotation = currentCharacter.transform.rotation;
             }
