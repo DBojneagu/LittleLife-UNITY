@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.IO;
 
 public class BuyCharacter : MonoBehaviour
 {
@@ -25,57 +26,67 @@ public class BuyCharacter : MonoBehaviour
         }
     }
 
-    public void BuyCharacter1()
+    public void BuyDeer()
     {
-        BuyCharacters("Bird", 50, bird);
+        BuyCharacters(1, 0, deer);
     }
 
-    public void BuyCharacter2()
+    public void BuyBird()
     {
-        BuyCharacters("Monkey", 100, monkey);
+        BuyCharacters(2, 50, bird);
     }
 
-    public void BuyCharacter3()
+    public void BuyMonkey()
     {
-        BuyCharacters("Squid", 350, squid);
+        BuyCharacters(3, 100, monkey);
     }
 
-    public void BuyCharacter4()
+    public void BuyMouse()
     {
-        BuyCharacters("Deer", 0, deer);
+        BuyCharacters(4, 150, mouse);
     }
 
-    public void BuyCharacter5()
+    public void BuySnake()
     {
-        BuyCharacters("Snake", 200, snake);
+        BuyCharacters(5, 200, snake);
     }
 
-    public void BuyCharacter6()
+    public void BuyFish()
     {
-        BuyCharacters("Mouse", 150, mouse);
+        BuyCharacters(6, 250, fish);
     }
 
-    public void BuyCharacter7()
+    public void BuyGecko()
     {
-        BuyCharacters("Gecko", 300, gecko);
+        BuyCharacters(7, 300, gecko);
     }
 
-    public void BuyCharacter8()
+    public void BuySquid()
     {
-        BuyCharacters("Fish", 250, fish);
+        BuyCharacters(8, 350, squid);
     }
 
-    private void BuyCharacters(string characterName, int characterPrice, GameObject specificCharacter)
+    public void BuyCharacters(int characterId, int characterPrice, GameObject specificCharacter)
     {
-        if (userMoney >= characterPrice && characterManager != null)
+        string userPath = Application.dataPath + "/Data/UserData.json";
+        string json = File.ReadAllText(userPath);
+        UserData user = JsonUtility.FromJson<UserData>(json);
+
+        if (user.Score >= characterPrice)
         {
             // User has enough money to buy the character
-            Debug.Log($"Congratulations! You bought {characterName} for ${characterPrice}.");
-            userMoney -= characterPrice; // Deduct the money after purchase
+            Debug.Log($"Congratulations! You bought {characterId} for ${characterPrice}.");
 
             if (specificCharacter != null)
             {
-                // If a specific character is provided, switch to that character
+                if (!user.Characters.Contains(characterId))
+                    user.Characters.Add(characterId);
+                user.SelectedCharacter = characterId;
+                user.Score -= characterPrice;
+
+                json = JsonUtility.ToJson(user, true);
+                File.WriteAllText(userPath, json);
+
                 characterManager.SwitchCharacter(specificCharacter);
             }
 /*            else

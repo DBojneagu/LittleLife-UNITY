@@ -43,7 +43,7 @@ public class MovieCollider : MonoBehaviour
         }
         else
         {
-            Debug.LogError("TaskCompletion component not assigned.");
+            Debug.Log("TaskCompletion component not assigned.");
         }
         PlayerPrefs.SetInt("Points", 0);
         PlayerPrefs.Save();
