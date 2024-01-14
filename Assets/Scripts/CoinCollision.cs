@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.Diagnostics;
-using static System.Diagnostics.Debug;
+﻿using System;
+using System.Collections;
 using System.IO;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
+
 
 
 [RequireComponent(typeof(Rigidbody))]
@@ -26,6 +24,7 @@ public class CoinCollision : MonoBehaviour
             string json = File.ReadAllText(userPath);
             UserData user = JsonUtility.FromJson<UserData>(json);
             user.Score++;
+            Debug.Log("user score on trigger: " + user.Score);
             json = JsonUtility.ToJson(user, true);
             File.WriteAllText(userPath, json);
 
@@ -57,6 +56,12 @@ public class CoinCollision : MonoBehaviour
         string userPath = Application.dataPath + "/Data/UserData.json";
         string json = File.ReadAllText(userPath);
         UserData user = JsonUtility.FromJson<UserData>(json);
+        Debug.Log("aici e userPath: " + userPath);
+        Debug.Log("aici e  json: " + json);
+        Debug.Log("aici e user: " + user);
+        Debug.Log("aici e scor: " + user.Score);
+
+
 
         int nrcoins = PlayerPrefs.GetInt("EarnedCoins");
         score.text = user.Score.ToString();
