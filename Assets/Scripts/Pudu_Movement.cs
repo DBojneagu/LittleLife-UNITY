@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class CharacterMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
@@ -7,6 +8,7 @@ public class CharacterMovement : MonoBehaviour
     public AudioSource audioSource;
 
     private Animator animator;  // Reference to the Animator component
+    private Rigidbody rb;      // Reference to the Rigidbody component
     private bool isWalking;     // Flag to track whether the character is walking or not
 
     void Start()
@@ -14,11 +16,17 @@ public class CharacterMovement : MonoBehaviour
         // Get the Animator component attached to the same GameObject
         animator = GetComponent<Animator>();
 
-        // Check if animator is not null (make sure you have Animator component attached to the GameObject)
-        if (animator == null)
+        // Get the Rigidbody component attached to the same GameObject
+        rb = GetComponent<Rigidbody>();
+
+        // Check if animator and Rigidbody are not null
+        if (animator == null || rb == null)
         {
-            Debug.LogError("Animator component not found!");
+            Debug.LogError("Animator or Rigidbody component not found!");
         }
+
+        // Set Rigidbody constraints to freeze rotation to prevent unwanted rotations
+        rb.freezeRotation = true;
     }
 
     void Update()
@@ -35,7 +43,9 @@ public class CharacterMovement : MonoBehaviour
 
             Quaternion targetRotation = Quaternion.LookRotation(worldMovement, Vector3.up);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-            transform.Translate(worldMovement * moveSpeed * Time.deltaTime, Space.World);
+
+            // Use Rigidbody to move the character
+            rb.velocity = worldMovement * moveSpeed;
 
             // Check if audioSource is not null and the footstep sound is not already playing
             if (audioSource != null && !audioSource.isPlaying)
@@ -59,6 +69,9 @@ public class CharacterMovement : MonoBehaviour
             {
                 animator.SetBool("IsSitting", true);
             }
+
+            // Stop the character by setting velocity to zero
+            rb.velocity = Vector3.zero;
         }
 
         // Update the Animator parameter based on the isWalking flag
