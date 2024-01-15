@@ -57,9 +57,6 @@ public class CoinCollision : MonoBehaviour
         string json = File.ReadAllText(userPath);
         UserData user = JsonUtility.FromJson<UserData>(json);
 
-
-
-
         int nrcoins = PlayerPrefs.GetInt("EarnedCoins");
         score.text = user.Score.ToString();
     }
