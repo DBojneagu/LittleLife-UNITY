@@ -81,7 +81,7 @@ public class BuyCharacter : MonoBehaviour
             {
                 if (!user.Characters.Contains(characterId))
                     user.Characters.Add(characterId);
-                user.SelectedCharacter = characterId;
+                //user.SelectedCharacter = characterId;
                 user.Score -= characterPrice;
 
                 json = JsonUtility.ToJson(user, true);

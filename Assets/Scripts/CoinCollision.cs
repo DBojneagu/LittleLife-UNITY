@@ -56,10 +56,7 @@ public class CoinCollision : MonoBehaviour
         string userPath = Application.dataPath + "/Data/UserData.json";
         string json = File.ReadAllText(userPath);
         UserData user = JsonUtility.FromJson<UserData>(json);
-        Debug.Log("aici e userPath: " + userPath);
-        Debug.Log("aici e  json: " + json);
-        Debug.Log("aici e user: " + user);
-        Debug.Log("aici e scor: " + user.Score);
+
 
 
 
