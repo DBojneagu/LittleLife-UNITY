@@ -70,7 +70,7 @@ The scene sets the stage with a cozy forest village. The purple diamants are poi
 
 <br>
 
-## Cinema Game
+## Cinema
 
 This is a mini-game that immerses players in a cinematic trivia experience. The players can test their movie knowledge as they navigate through a series of engaging questions, spanning genres, eras, and film facts. With each correct answer, players gain 50 points, creating an entertaining and challenging journey for film enthusiasts. When the player touches the 3D tv symbol the scene opens and the game begins.
 
@@ -106,7 +106,7 @@ This is a mini-game that immerses players in a cinematic trivia experience. The 
 
 <br>
 
-## Coffee Shop Game
+## Coffee Shop
 
 This is a mini-game where players become virtual baristas in a delightful challenge of coffee and pastry delivery. Navigate through levels by fulfilling customer orders with precision and speed. The game offers a fun and engaging experience that tests your barista skills while keeping the virtual coffee shop buzzing with excitement. When the player touches the 3D coffee cup symbol the scene opens and the game begins.
 
@@ -122,6 +122,43 @@ This is a mini-game where players become virtual baristas in a delightful challe
 <div align="center">
     <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/9901872a-a519-4fc2-9f64-df5d99ab6c99" alt="image" width="600px">
 </div>
-## Review
-[Here](https://github.com/DBojneagu/LittleLife-UNITY/issues) you can write your review for the current sprint.
 
+<br>
+
+## Snake
+
+This is a mini-game with a modern twist on the classic snake game. The player must maneuver a pixelated serpent through a maze, collecting red squares to grow longer and avoiding collisions with itself and the walls. With each successful snack, the challenge intensifies, making this mini-game a thrilling test of strategy and reflexes. When the player touches the 3D snake symbol the scene opens and the game begins.
+
+<br>
+
+<div align="center">
+    <img src="https://github.com/DBojneagu/LittleLife-UNITY/assets/93272424/88268971-b574-4223-bb23-17a7e3fb89ed" alt="image" width="600px">
+</div>
+
+<br>
+
+
+<div align="center">
+    <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/9901872a-a519-4fc2-9f64-df5d99ab6c99" alt="image" width="600px">
+</div>
+
+<br>
+
+## Car Race
+
+This is a mini-game simulating a car race. Navigate through traffic with precision, avoiding cones and obstacles to test the player's driving skills. As the intensity builds, so does the challenge, making every moment a heart-pounding race against time. When the player touches the 3D car symbol the scene opens and the game begins.
+
+<br>
+
+<div align="center">
+    <img src="https://github.com/DBojneagu/LittleLife-UNITY/assets/93272424/6e1ebe78-9ed3-49e8-bade-0c91606fd2d3" alt="image" width="600px">
+</div>
+
+<br>
+
+
+<div align="center">
+    <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/9901872a-a519-4fc2-9f64-df5d99ab6c99" alt="image" width="600px">
+</div>
+
+<br>
