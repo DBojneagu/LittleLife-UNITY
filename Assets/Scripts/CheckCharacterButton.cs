@@ -80,6 +80,9 @@ public class CheckCharacterButton : MonoBehaviour
         // Check if the character ID is in the list
         if (user.Characters.Contains(characterIdToCheck))
         {
+            user.SelectedCharacter = characterIdToCheck;
+            json = JsonUtility.ToJson(user, true);
+            File.WriteAllText(userPath, json);
             // Character is in the list, switch to that character
             characterManager.SwitchCharacter(character);
         }

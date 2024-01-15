@@ -68,6 +68,7 @@ public class CharacterMovement : MonoBehaviour
             // Set IsSitting to true when not moving
             if (animator != null)
             {
+
                 animator.SetBool("IsSitting", true);
             }
 

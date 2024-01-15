@@ -21,7 +21,7 @@ public class CharacterManager : MonoBehaviour
     public void SwitchCharacter(GameObject newCharacter)
     {
         Debug.LogWarning("entered switch!");
-
+        currentCharacter = GameObject.FindWithTag("Player");
         if (newCharacter != null)
         {
             // Optionally, copy the position and rotation from the current character to the new character
