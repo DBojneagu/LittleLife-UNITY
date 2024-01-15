@@ -139,7 +139,13 @@ This is a mini-game with a modern twist on the classic snake game. The player mu
 
 
 <div align="center">
-    <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/9901872a-a519-4fc2-9f64-df5d99ab6c99" alt="image" width="600px">
+    <img src="https://github.com/DBojneagu/LittleLife-UNITY/assets/93272424/e18402a6-1cfe-4f14-9abe-531caedf5f52" alt="image" width="600px">
+</div>
+
+<br>
+
+<div align="center">
+    <img src="https://github.com/DBojneagu/LittleLife-UNITY/assets/93272424/c4981d84-c1e5-406e-a744-68331d36fbe3" alt="image" width="600px">
 </div>
 
 <br>
@@ -158,7 +164,7 @@ This is a mini-game simulating a car race. Navigate through traffic with precisi
 
 
 <div align="center">
-    <img src="https://github.com/DBojneagu/TitleTODO-UNITY/assets/101595151/9901872a-a519-4fc2-9f64-df5d99ab6c99" alt="image" width="600px">
+    <img src="https://github.com/DBojneagu/LittleLife-UNITY/assets/93272424/4eb7d060-4312-4bd6-ad9c-a44238009489" alt="image" width="600px">
 </div>
 
 <br>
