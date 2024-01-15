@@ -12,11 +12,14 @@ public class CheckCharacterButton : MonoBehaviour
     public string characterName;
     public GameObject character;
     private CharacterManager characterManager; // Reference to the CharacterManager script
+    private BuyCharacter buyCharacter;
 
     private void Start()
     {
         // Find the CharacterManager script in the scene
         characterManager = FindObjectOfType<CharacterManager>();
+        buyCharacter = FindObjectOfType<BuyCharacter>();
+
 
         if (characterManager == null)
         {
@@ -82,7 +85,6 @@ public class CheckCharacterButton : MonoBehaviour
         }
         else
         {
-            BuyCharacter buyCharacter = new BuyCharacter();
             // Character is not in the list or CharacterManager is not initialized
             buyCharacter.BuyCharacters(characterIdToCheck, characterPrice, character);
         }
