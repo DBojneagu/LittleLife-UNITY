@@ -3,6 +3,8 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.IO;
+using TMPro;
+using Unity.VisualScripting;
 
 namespace PW
 {
@@ -10,6 +12,8 @@ namespace PW
     {
         public GameObject finishPanel; // Use GameObject instead of Canvas or Panel directly
         public Image starIcon;
+        public TextMeshProUGUI Congrats;
+        public Button Home;
         private int rightOrders = 0;
         private int ordersOutOfTime = 0;
         private bool gameFinished = false;
@@ -78,6 +82,10 @@ namespace PW
             DisplayStars(stars);
             //DisplayStars(stars);
             finishPanel.SetActive(true); // Use SetActive on the GameObject
+
+    
+            Home.gameObject.SetActive(true);
+            Congrats.gameObject.SetActive(true);
         }
 
         public int CalculateStars()
@@ -110,7 +118,7 @@ namespace PW
                 Destroy(child.gameObject);
             }
 
- 
+
             for (int i = 0; i < 3; i++)
             {
                 GameObject star = Instantiate(starIcon.gameObject);
