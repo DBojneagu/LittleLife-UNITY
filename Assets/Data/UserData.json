@@ -1,7 +1,12 @@
 {
-    "Score": 3550,
-    "SelectedCharacter": 1,
+    "Score": 2601,
+    "SelectedCharacter": 4,
     "Characters": [
-        1
+        1,
+        7,
+        5,
+        2,
+        6,
+        4
     ]
 }
