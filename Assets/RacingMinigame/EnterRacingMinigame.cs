@@ -13,12 +13,16 @@ public class EnterRacingMinigame : MonoBehaviour
         if (other.CompareTag("Ferrari"))
         {
             // Save the player's position before transitioning to another scene
+            /*playerPositionHandler.SavePlayerPosition();
+            //Debug.Log(playerTransform);
+            PlayerPrefs.SetFloat("PlayerX", playerTransform.position.x - 15);
+            PlayerPrefs.SetFloat("PlayerY", playerTransform.position.y - 15);
+            PlayerPrefs.SetFloat("PlayerZ", playerTransform.position.z);
+            PlayerPrefs.Save();*/
             //playerPositionHandler.SavePlayerPosition();
-            //PlayerPrefs.SetFloat("PlayerX", playerTransform.position.x - 5);
-            //PlayerPrefs.SetFloat("PlayerY", playerTransform.position.y - 5);
-            //PlayerPrefs.SetFloat("PlayerZ", playerTransform.position.z);
-            //PlayerPrefs.Save();
-            //playerPositionHandler.SavePlayerPosition();
+
+            playerTransform.position = new Vector3(-7.75f, 0.0f, -1.7f);
+
             PlayerCompletedTask();
             SceneManager.LoadScene(sceneToLoad);
         }
